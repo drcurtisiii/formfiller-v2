@@ -216,6 +216,63 @@
             </div>
         </div>
 
+        <!-- User Settings Modal -->
+        <div class="modal" id="userModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="userModalTitle">User Settings</h3>
+                    <span class="modal-close" id="userModalClose">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <form id="userForm">
+                        <div class="form-group">
+                            <label for="userName">Full Name:</label>
+                            <input type="text" id="userName" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="userEmail">Email:</label>
+                            <input type="email" id="userEmail" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="userFirmName">Firm Name:</label>
+                            <input type="text" id="userFirmName" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="userBarNumber">Bar Number:</label>
+                            <input type="text" id="userBarNumber" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="userFirmAddress">Firm Address:</label>
+                            <textarea id="userFirmAddress" class="form-control" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="userFirmPhone">Phone:</label>
+                            <input type="tel" id="userFirmPhone" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="userFirmFax">Fax:</label>
+                            <input type="tel" id="userFirmFax" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="userTemplateFolder">Template Folder Path:</label>
+                            <div class="folder-path-input">
+                                <input type="text" id="userTemplateFolder" class="form-control" 
+                                       placeholder="e.g., D:\Curtis Law Firm Dropbox\Templates\Criminal">
+                                <button type="button" class="btn btn-outline" id="browseFolder">
+                                    <i class="fas fa-folder-open"></i> Browse
+                                </button>
+                            </div>
+                            <small class="help-text">Path to your Dropbox template folder</small>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline" id="userModalCancel">Cancel</button>
+                    <button type="button" class="btn btn-primary" id="userModalSave">Save Settings</button>
+                </div>
+            </div>
+        </div>
+
         <!-- GitHub Settings Modal -->
         <div class="modal" id="githubModal">
             <div class="modal-content">
