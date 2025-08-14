@@ -16,7 +16,103 @@ A professional web-based template filling application for legal documents. Uploa
 
 The app recognizes field strings in the format:
 ```
+# Template Filler App v2 - Simplified File-Based Version
+
+A simplified web application for filling legal document templates with client/matter data. This version uses local file selection and Dropbox folder sharing instead of complex cloud APIs.
+
+## Features
+
+- **User Management**: Support for multiple users (Ray Curtis, Danielle Brown, Jessie Mangum, Laurel Lavalle)
+- **Template Selection**: Select DOCX templates directly from local Dropbox folders
+- **Client/Matter Management**: Store and manage client information locally
+- **Document Generation**: Fill templates with data and output as DOCX files
+- **Notes System**: Add notes to client matters
+- **File-Based Sharing**: Share data files through Dropbox between team members
+
+## Quick Start
+
+1. **Select User**: Choose your name from the dropdown in the top-right
+2. **Configure Folder**: Set your template folder path in user settings
+3. **Select Templates**: Use the file picker to select DOCX templates from your folder
+4. **Analyze**: Click "Analyze Templates" to extract fillable fields
+5. **Fill Data**: Enter client/matter information and field values
+6. **Generate**: Create filled documents and download as DOCX files
+
+## User Configuration
+
+Each user can configure:
+- Template folder path (e.g., `D:\Curtis Law Firm Dropbox\Templates\Criminal`)
+- Firm information (name, address, phone, etc.)
+- Bar number and email
+
+## File Structure
+
+```
+formfiller-v2/
+├── index.html              # Main application interface
+├── app.js                  # Main application logic
+├── user-manager.js         # User management system
+├── client-manager.js       # Client/matter management
+├── template-selector.js    # Template file selection
+├── tfa-engine.js          # Template processing engine
+├── styles.css             # Application styling
+└── README.md              # This file
+```
+
+## Template Format
+
+Templates should be DOCX files with field placeholders in the format:
+```
 {{CATEGORY.FIELD_NAME|TYPE|OPTIONS}}
+```
+
+Examples:
+- `{{CLIENT.FIRST_NAME|TEXT}}` - Text input for client first name
+- `{{CLIENT.LAST_NAME|TEXT}}` - Text input for client last name
+- `{{MATTER.CASE_NUMBER|TEXT}}` - Text input for case number
+- `{{COURT.NAME|SELECT|County Court,Circuit Court,District Court}}` - Dropdown selection
+
+## Simplified Architecture
+
+This version removes complex cloud API dependencies in favor of:
+- Local file selection instead of GitHub API
+- localStorage for user/client data instead of cloud storage
+- Dropbox file sharing for team collaboration
+- Direct DOCX output instead of PDF conversion
+
+## Team Collaboration
+
+Share data between team members by:
+1. Saving client data as JSON files in shared Dropbox folders
+2. Using consistent template folder structures
+3. Coordinating user settings through shared configuration files
+
+## Browser Compatibility
+
+- Chrome/Edge (recommended)
+- Firefox
+- Safari
+
+Requires modern browser with File API support for template selection.
+
+## Development
+
+To modify the application:
+1. Edit the appropriate JavaScript files
+2. Test in a local web server or open `index.html` directly
+3. Commit changes: `git add . && git commit -m "Description"`
+4. Push updates: `git push origin main`
+
+## Troubleshooting
+
+**Templates not loading**: Check that template folder path is correct and files are DOCX format
+**Field extraction failing**: Verify template field syntax matches expected format
+**Download issues**: Ensure browser allows file downloads from local applications
+
+---
+
+Created by The Curtis Law Firm, P.A.
+Simplified for reliable file-based operation.
 ```
 
 ### Supported Field Types
