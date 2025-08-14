@@ -1,0 +1,50 @@
+IN THE CIRCUIT COURT OF THE {{COURT.JUDICIAL_CIRCUIT|SELECT|1st,2nd,3rd,4th,5th,6th,7th,8th,9th,10th,11th,12th,13th,14th,15th,16th,17th,18th,19th,20th}} JUDICIAL CIRCUIT
+IN AND FOR {{COURT.COUNTY|SELECT|Alachua,Baker,Bay,Bradford,Brevard,Broward,Calhoun,Charlotte,Citrus,Clay,Collier,Columbia,DeSoto,Dixie,Duval,Escambia,Flagler,Franklin,Gadsden,Gilchrist,Glades,Gulf,Hamilton,Hardee,Hendry,Hernando,Highlands,Hillsborough,Holmes,Indian River,Jackson,Jefferson,Lafayette,Lake,Lee,Leon,Levy,Liberty,Madison,Manatee,Marion,Martin,Miami-Dade,Monroe,Nassau,Okaloosa,Okeechobee,Orange,Osceola,Palm Beach,Pasco,Pinellas,Polk,Putnam,St. Johns,St. Lucie,Santa Rosa,Sarasota,Seminole,Sumter,Suwannee,Taylor,Union,Volusia,Wakulla,Walton,Washington}} COUNTY, FLORIDA
+
+{{CASE.STYLE_PREFIX|SELECT|The Marriage of,The Former Marriage of,In re the Marriage of,FLORIDA DEPARTMENT OF REVENUE o/b/o}}
+
+{{CLIENT.FIRST_NAME|TEXT}} {{CLIENT.LAST_NAME|TEXT}},
+                                                    Petitioner,
+vs.                                                                                   Case No. {{CASE.NUMBER|TEXT}}
+
+{{SPOUSE.FIRST_NAME|TEXT}} {{SPOUSE.LAST_NAME|TEXT}},
+                                                    Respondent.
+___________________________________/
+
+MOTION FOR {{MOTION.TYPE|SELECT|Temporary Relief,Contempt,Modification,Enforcement,Attorney's Fees,Discovery}}
+
+TO THE HONORABLE COURT:
+
+{{CLIENT.FIRST_NAME|TEXT}} {{CLIENT.LAST_NAME|TEXT}}, Petitioner, by and through the undersigned attorney, respectfully moves this Honorable Court for {{MOTION.TYPE|SELECT|Temporary Relief,Contempt,Modification,Enforcement,Attorney's Fees,Discovery}} and in support thereof states:
+
+1. This Court has jurisdiction over the parties and subject matter of this action.
+
+2. {{CLIENT.FIRST_NAME|TEXT}} {{CLIENT.LAST_NAME|TEXT}} and {{SPOUSE.FIRST_NAME|TEXT}} {{SPOUSE.LAST_NAME|TEXT}} were married on {{MARRIAGE.DATE|DATE}} in {{MARRIAGE.LOCATION|TEXT}}.
+
+3. The parties have the following minor children:
+   {{CHILDREN.NAMES|TEXT}}
+   Date of Birth: {{CHILDREN.DOB|DATE}}
+
+4. {{MOTION.GROUNDS|TEXT}}
+
+5. {{MOTION.RELIEF_SOUGHT|TEXT}}
+
+WHEREFORE, Petitioner respectfully requests that this Honorable Court:
+
+a) {{MOTION.REQUEST_A|TEXT}}
+b) {{MOTION.REQUEST_B|TEXT}}
+c) Grant such other and further relief as this Court deems just and proper.
+
+I HEREBY CERTIFY that a true and correct copy of the foregoing has been furnished by email to {{OPPOSING_ATTORNEY.NAME|TEXT}}, Esquire, at {{OPPOSING_ATTORNEY.EMAIL|TEXT}}, attorney for Respondent, on {{DOCUMENT.SERVICE_DATE|DATE}}.
+
+                                        Respectfully submitted,
+
+                                        {{ATTORNEY.SIGNATURE|TEXT}}
+                                        {{ATTORNEY.FIRST_NAME|TEXT}} {{ATTORNEY.LAST_NAME|TEXT}}, Esquire
+                                        Florida Bar No. {{ATTORNEY.BAR_NUMBER|TEXT}}
+                                        {{ATTORNEY.FIRM_NAME|TEXT}}
+                                        {{ATTORNEY.ADDRESS|TEXT}}
+                                        {{ATTORNEY.CITY|TEXT}}, Florida {{ATTORNEY.ZIP|TEXT}}
+                                        Phone: {{ATTORNEY.PHONE|PHONE}}
+                                        Email: {{ATTORNEY.EMAIL|TEXT}}
+                                        Attorney for Petitioner

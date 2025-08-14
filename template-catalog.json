@@ -1,0 +1,35 @@
+{
+  "templateCategories": {
+    "Family": {
+      "name": "Family Law",
+      "icon": "fas fa-home",
+      "description": "Divorce, custody, support, and other family law documents",
+      "templates": [
+        {
+          "name": "Notice of Appearance and DOE",
+          "filename": "Notice of Appearance and DOE.docx",
+          "description": "Standard notice of appearance for family law cases",
+          "url": "https://raw.githubusercontent.com/drcurtisiii/formfiller/main/Forms/Family/Notice%20of%20Appearance%20and%20DOE.docx"
+        },
+        {
+          "name": "Notice of Hearing",
+          "filename": "Notice of Hearing.docx", 
+          "description": "Notice of hearing for court proceedings",
+          "url": "https://raw.githubusercontent.com/drcurtisiii/formfiller/main/Forms/Family/Notice%20of%20Hearing.docx"
+        }
+      ]
+    },
+    "Criminal": {
+      "name": "Criminal Law",
+      "icon": "fas fa-gavel",
+      "description": "Criminal defense and prosecution documents",
+      "templates": []
+    },
+    "Real Estate": {
+      "name": "Real Estate Law", 
+      "icon": "fas fa-building",
+      "description": "Real estate transactions and property law documents",
+      "templates": []
+    }
+  }
+}

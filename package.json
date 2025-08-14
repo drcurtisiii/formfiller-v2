@@ -1,0 +1,39 @@
+{
+  "name": "curtis-law-tfa",
+  "version": "1.0.0",
+  "description": "Template Filler App for Curtis Law Firm - Professional legal document automation",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve . --cors",
+    "build": "echo 'No build process needed for static site'",
+    "deploy": "netlify deploy --prod",
+    "test": "echo 'Testing with sample documents'"
+  },
+  "keywords": [
+    "legal",
+    "templates",
+    "document-automation",
+    "law-firm",
+    "form-filler"
+  ],
+  "author": "Curtis Law Firm",
+  "license": "Proprietary",
+  "devDependencies": {
+    "serve": "^14.0.0"
+  },
+  "optionalDependencies": {
+    "mammoth": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/curtislawfirm/tfa-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/curtislawfirm/tfa-web/issues"
+  },
+  "homepage": "https://curtis-law-tfa.netlify.app"
+}
